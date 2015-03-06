@@ -26,7 +26,15 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "boolean",
+    "bool",
+    "primitive",
+    "is",
+    "isbool",
+    "isboolean",
+    "isprimitive"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/boolean-primitive/issues"

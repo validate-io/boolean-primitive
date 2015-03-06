@@ -1,4 +1,4 @@
-boolean-primitive
+Boolean Primitive
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -17,18 +17,37 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-boolean-primitive' );
+var isBoolean = require( 'validate.io-boolean-primitive' );
 ```
 
-#### foo( value )
+#### isBoolean( value )
 
-What does this function do?
+Validates if a `value` is a `boolean` primitive.
+
+``` javascript
+var value = false;
+
+var bool = isBoolean( value );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-boolean-primitive' );
+var isBoolean = require( 'validate.io-boolean-primitive' );
+
+console.log( isBoolean( false ) );
+// returns true
+
+console.log( isBoolean( true ) );
+// returns true
+
+console.log( isBoolean( new Boolean( true ) ) );
+// returns false
+
+console.log( isBoolean( 5 ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
